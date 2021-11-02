@@ -1,13 +1,23 @@
 #ifndef LIBFT_TESTS_H
 # define LIBFT_TESTS_H
 
-# include <stdlib.h>
-# include <stdio.h>
-# include <unistd.h>
-# include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <strings.h>
+#include <stdio.h>
+#include "../LibFT/libft.h"
+
+#define TESTF(fn)	printf("\n##############################\n\e[1;34mTesting %s function...\e[0m", fn);
+#define TESTFAILED(n) printf("\e[1;31m\nTEST %d FAILED!\e[0m", n)
+#define TESTOK(n) printf("\e[1;32m\nTEST %d OK!\e[0m", n)
+#define TESTN(n) printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nTest # %d\n", n)
 
 void	test_ft_strlen(void);
 void	test_ft_strcmp(void);
+void	test_ft_strncpy();
+void	test_ft_strstr();
+void	test_ft_strnstr();
 
 int	ft_strlen(char *str);
 int	ft_strcmp(char *s1, char *s2);

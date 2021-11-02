@@ -1,50 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ft_strstr.c                                   :+:      :+:    :+:   */
+/*   test_ft_strnstr.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: parkharo <parkharo@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 12:24:14 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/02 14:37:14 by parkharo         ###   ########.fr       */
+/*   Created: 2021/11/02 14:37:47 by parkharo          #+#    #+#             */
+/*   Updated: 2021/11/02 14:38:42 by parkharo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../LibFT/libft.h"
 #include "libft_tests.h"
 
-void	test_ft_strstr()
+void	test_ft_strnstr()
 {
-		TESTF("ft_strstr");
+			TESTF("ft_strnstr");
 
 	TESTN(1);
-	char *ptr1 = strstr("Foo Bar Baz", "Bar");
-	char *ptr2 = ft_strstr("Foo Bar Baz", "Bar");
+	char *ptr1 = strnstr("Foo Bar Baz", "Bar", 4);
+	char *ptr2 = ft_strnstr("Foo Bar Baz", "Bar", 4);
 	printf("\nOriginal libc function returns %s\n", ptr1);
 	printf("To be tested  function returns %s\n", ptr2);
-	if (ft_strcmp(ptr1, ptr2) == 0)
+	if (ptr1 == ptr2)
 		TESTOK(1);
 	else
 		TESTFAILED(1);
 
 	TESTN(2);
-	ptr1 = strstr("Foo Bar Baz", "");
-	ptr2 = ft_strstr("Foo Bar Baz", "");
+	ptr1 = strnstr("Foo Bar Baz", "Bar", 7);
+	ptr2 = ft_strnstr("Foo Bar Baz", "Bar", 7);
 	printf("\nOriginal libc function returns %s\n", ptr1);
 	printf("To be tested  function returns %s\n", ptr2);
-	if (ft_strcmp(ptr1, ptr2) == 0)
+	if (strcmp(ptr1, ptr2) == 0)
 		TESTOK(2);
 	else
 		TESTFAILED(2);
-
+	
 	TESTN(3);
-	ptr1 = strstr("Foo Bar Baz", "Bao");
-	ptr2 = ft_strstr("Foo Bar Baz", "Bao");
+	ptr1 = strnstr("Foo Bar Baz", "", 3);
+	ptr2 = ft_strnstr("Foo Bar Baz", "", 3);
 	printf("\nOriginal libc function returns %s\n", ptr1);
 	printf("To be tested  function returns %s\n", ptr2);
-	if (ptr1 == ptr2)
+	if (strcmp(ptr1, ptr2) == 0)
 		TESTOK(3);
 	else
 		TESTFAILED(3);
 }
-

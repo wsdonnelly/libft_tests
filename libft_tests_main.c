@@ -4,6 +4,9 @@ int main()
 {
 	test_ft_strlen();
 	test_ft_strcmp();
-	//add subsequent tests here
+	test_ft_strncpy();
+	test_ft_strnstr();
+	test_ft_strstr();
+	
 	return (0);
 }
