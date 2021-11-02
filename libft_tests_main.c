@@ -11,6 +11,7 @@ int main()
 	test_ft_strncat();
 	test_ft_putchar();
 	test_ft_putnbr();
+	test_ft_strcpy();
 
 
 	return (0);

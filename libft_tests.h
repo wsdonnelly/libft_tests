@@ -26,6 +26,7 @@ void	test_ft_strcat();
 void	test_ft_strncat();
 void	test_ft_putchar();
 void	test_ft_putnbr();
+void	test_ft_strcpy();
 
 
 #endif
