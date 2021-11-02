@@ -12,6 +12,7 @@ int main()
 	test_ft_putchar();
 	test_ft_putnbr();
 	test_ft_strcpy();
+	test_ft_atoi();
 
 
 	return (0);
