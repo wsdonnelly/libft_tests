@@ -16,10 +16,10 @@
 
 ## HOW TO ADD TESTS
 
-1. Create file in the root named 'test_ft_*FUNCTIONNAME*.c
+1. Create file in the root named `test_ft_FUNCTIONNAME.c`
 2. Write the tests using predefined templates TESTF(function_name) in the beginning; TESTN(test_number) to initialize each test and TESTOK(test_number) or TESTFAILED(test_number) to validate results.
-3. Add `void test_ft_*FUNCTIONNAME(void)` prototype to libft_tests.h header file
-4. Add function call to `test_ft_*FUNCTIONNAME*()` in libft_tests_main.c file
+3. Add `void test_ft_FUNCTIONNAME(void)` prototype to libft_tests.h header file
+4. Add function call to `test_ft_FUNCTIONNAME()` in libft_tests_main.c file
 5. Compile tests with `make re`
 6. Run with `./test_ft`
 
