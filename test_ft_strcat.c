@@ -6,12 +6,11 @@
 /*   By: parkharo <parkharo@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:08:16 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/02 17:27:49 by parkharo         ###   ########.fr       */
+/*   Updated: 2021/11/02 17:59:12 by parkharo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_tests.h"
-
 
 void	test_ft_strcat()
 {
