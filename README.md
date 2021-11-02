@@ -9,11 +9,14 @@
 3. these sholud compile to .o files which are subsequently linked and compiled with your own libft like so:
 4. gcc *.o -L<libftpath> -lft
 5. functions should be named in a consistant manner like "test_<functionname>.c"
-#### TO DO
 
-* add makefile
-* work out meaningful error message if a function is missing from your personal libft when tested
 
+## HOW TO INSTALL AND RUN TESTS
+
+1. `git clone` repo to your machine
+2. Change `LIBDIR` variable in the `Makefile` according to your folder structure. That should be the folder containing your libft.a file. 
+3. Change the same path in `libft_tests.h` file  libft.h header include. 
+4. Make and proceed with tests.
 ## HOW TO ADD TESTS
 
 1. Create file in the root named `test_ft_FUNCTIONNAME.c`
@@ -23,5 +26,9 @@
 5. Compile tests with `make re`
 6. Run with `./test_ft`
 
+#### TO DO
+
+* add more tests
+* figure out a way to share libft.a across different users via global file/variable
 
 ##### Contact me here or on Discord: wdonnell
