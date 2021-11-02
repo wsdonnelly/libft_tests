@@ -7,6 +7,8 @@ int main()
 	test_ft_strncpy();
 	test_ft_strnstr();
 	test_ft_strstr();
+	test_ft_strcat();
+	test_ft_strncat();
 	
 	return (0);
 }

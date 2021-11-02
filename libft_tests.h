@@ -18,9 +18,9 @@ void	test_ft_strcmp(void);
 void	test_ft_strncpy();
 void	test_ft_strstr();
 void	test_ft_strnstr();
+void	test_ft_strcat();
+void	test_ft_strncat();
 
-int	ft_strlen(char *str);
-int	ft_strcmp(char *s1, char *s2);
 
 #endif
 /*
@@ -34,14 +34,14 @@ ft_memcmp
 ---ft_strlen
 ft_strdup
 ft_strcpy
-ft_strncpy
+---ft_strncpy
 ft_strcat
 ft_strncat
 ft_strlcat
 ft_strchr
 ft_strrchr
-ft_strstr
-ft_strnstr
+---ft_strstr
+---ft_strnstr
 ---ft_strcmp 
 ft_strncmp
 ft_atoi

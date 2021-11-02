@@ -6,11 +6,10 @@
 /*   By: parkharo <parkharo@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 12:24:14 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/02 14:37:14 by parkharo         ###   ########.fr       */
+/*   Updated: 2021/11/02 17:39:59 by parkharo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../LibFT/libft.h"
 #include "libft_tests.h"
 
 void	test_ft_strstr()
