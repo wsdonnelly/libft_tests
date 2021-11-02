@@ -11,3 +11,5 @@
 #### TO DO
 * add makefile
 * work out meaningful error message if a function is missing from your personal libft when tested
+
+##### Contact me here or on Discord: wdonnell
