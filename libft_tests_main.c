@@ -9,6 +9,9 @@ int main()
 	test_ft_strstr();
 	test_ft_strcat();
 	test_ft_strncat();
-	
+	test_ft_putchar();
+	test_ft_putnbr();
+
+
 	return (0);
 }
