@@ -25,7 +25,10 @@ void	test_ft_putchar();
 void	test_ft_putnbr();
 void	test_ft_strcpy();
 void	test_ft_atoi();
-
+void	test_ft_bzero();
+void	test_ft_memset();
+void	test_ft_memcpy();
+void	test_ft_memccpy();
 
 #endif
 /*

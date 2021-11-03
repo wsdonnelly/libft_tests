@@ -13,7 +13,10 @@ int main()
 	test_ft_putnbr();
 	test_ft_strcpy();
 	test_ft_atoi();
-
+	test_ft_bzero();
+	test_ft_memset();
+	test_ft_memcpy();
+	test_ft_memccpy();
 
 	return (0);
 }
