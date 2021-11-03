@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_memccpy.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jlehtine <jlehtine@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: parkharo <parkharo@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 13:25:59 by jlehtine          #+#    #+#             */
-/*   Updated: 2021/11/03 14:08:09 by jlehtine         ###   ########.fr       */
+/*   Updated: 2021/11/03 16:32:51 by parkharo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
