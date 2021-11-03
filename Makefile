@@ -6,16 +6,16 @@
 #    By: parkharo <parkharo@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 14:58:52 by parkharo          #+#    #+#              #
-#    Updated: 2021/11/02 15:07:10 by parkharo         ###   ########.fr        #
+#    Updated: 2021/11/03 12:23:24 by jlehtine         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc 
 
-CFLAGS = -Wall -Wextra -Werror -I *.h -o $(NAME)
+CFLAGS = -Wall -Wextra -Werror -I *.h -o $(NAME) -include $(LIBDIR)/libft.h
 LIBFLAGS = -L${LIBDIR} -lft 
 
-LIBDIR = ../LibFT
+LIBDIR = ../libft
 NAME = test_ft
 
 SRC = *.c 

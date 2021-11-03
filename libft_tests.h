@@ -1,9 +1,6 @@
 #ifndef LIBFT_TESTS_H
 # define LIBFT_TESTS_H
 
-/* Change this path to represent your local path to libft.h file in your LibFT project folderr */
-#include "../LibFT/libft.h" 
-
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
