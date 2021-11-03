@@ -17,6 +17,10 @@ int main()
 	test_ft_memset();
 	test_ft_memcpy();
 	test_ft_memccpy();
+	test_ft_memmove();
+	test_ft_memchr();
+	test_ft_memcmp();
+	test_ft_strdup();
 
 	return (0);
 }
