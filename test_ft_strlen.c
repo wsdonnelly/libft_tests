@@ -1,6 +1,5 @@
 #include "libft_tests.h"
 
-
 void test_ft_strlen(void)
 {
 	char *s1 = "hello world!";
