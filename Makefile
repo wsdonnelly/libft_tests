@@ -6,12 +6,13 @@
 #    By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 14:58:52 by parkharo          #+#    #+#              #
-#    Updated: 2021/11/08 16:04:44 by wdonnell         ###   ########.fr        #
+#    Updated: 2021/11/08 17:09:29 by wdonnell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc 
 
+#FLAGS = -Wall -Wextra -Werror ./test-o $(NAME) -include $(LIBDIR)/libft.h
 CFLAGS = -Wall -Wextra -Werror -I *.h -o $(NAME) -include $(LIBDIR)/libft.h
 LIBFLAGS = -L${LIBDIR} -lft 
 
