@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_putnbr.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: parkharo <parkharo@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 20:00:39 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/02 20:31:38 by parkharo         ###   ########.fr       */
+/*   Updated: 2021/11/08 11:57:09 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,4 @@ void	test_ft_putnbr()
 	ft_putnbr(0);
 	printf("\nOutput -42  \n");
 	ft_putnbr(-42);
-	
 }

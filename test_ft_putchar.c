@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 19:35:13 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/05 15:21:21 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/08 11:29:04 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,12 @@ void	test_ft_putchar()
 	TESTF("ft_putchar");
 
 	TESTN(1);
-	ft_putstr("Original libc function outputs: ");
-	ft_putchar('a');
-	ft_putstr("Function to  be tested outputs: ");
-	ft_putchar('a');
+	printf("128\t");
+	ft_putchar(128);
+	printf("\n");
 
-	// printf("Original libc function returns: %d", putchar('a'));
-	// printf("\nFunction to  be tested returrns: %d", ft_putchar('a'));
-	
-
-
-
+	TESTN(2);
+	printf("125\t");
+	ft_putchar(125);
+	printf("\n");
 }

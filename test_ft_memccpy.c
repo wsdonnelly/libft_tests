@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_memccpy.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: parkharo <parkharo@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 13:25:59 by jlehtine          #+#    #+#             */
-/*   Updated: 2021/11/03 16:56:15 by parkharo         ###   ########.fr       */
+/*   Updated: 2021/11/08 11:10:22 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	test_ft_memccpy()
 	char s1[20] = "Hello World!";
 	char s2[] = "Foo Bar String";
 	char s3[20] = "Hello World!";
-	char *ptr1 = memccpy(s1, s2, 'a', sizeof(s2));
-	char	*ptr2 = ft_memccpy(s3, s2, 'a', sizeof(s2));
+	char *ptr1 = (char*)memccpy(s1, s2, 'a', sizeof(s2));
+	char *ptr2 = (char*)ft_memccpy(s3, s2, 'a', sizeof(s2));
 
 	printf("Value of s1 now: %s\n", s1);
 	printf("Value of s3 now: %s", s3);
