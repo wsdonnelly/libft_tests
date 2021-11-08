@@ -30,5 +30,4 @@ void test_ft_strlen(void)
 		TESTOK(1);
 	else
 		TESTFAILED(1);
-
 }

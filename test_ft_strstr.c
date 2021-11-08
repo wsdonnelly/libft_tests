@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strstr.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: parkharo <parkharo@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 12:24:14 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/02 17:39:59 by parkharo         ###   ########.fr       */
+/*   Updated: 2021/11/08 15:24:33 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,3 @@ void	test_ft_strstr()
 	else
 		TESTFAILED(3);
 }
-

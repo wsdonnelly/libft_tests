@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strnstr.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: parkharo <parkharo@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 14:37:47 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/02 17:58:50 by parkharo         ###   ########.fr       */
+/*   Updated: 2021/11/08 15:15:57 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	test_ft_strnstr()
 {
-			TESTF("ft_strnstr");
+	TESTF("ft_strnstr");
 
 	TESTN(1);
 	char *ptr1 = strnstr("Foo Bar Baz", "Bar", 4);
