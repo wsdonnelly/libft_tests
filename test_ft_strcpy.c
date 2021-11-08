@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strcpy.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: parkharo <parkharo@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 20:52:35 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/02 21:03:25 by parkharo         ###   ########.fr       */
+/*   Updated: 2021/11/08 12:42:45 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,19 @@ void	test_ft_strcpy()
 	ft_strcpy(chararray2, "");
 	printf("\nFunction to  be tested returns %s\n", chararray2);
 	if (strcmp(chararray, chararray2) == 0)
+			TESTOK(3);
+	else
+			TESTFAILED(3);
+	
+	TESTN(4);
+	char toosmall[5];
+	char toosmall2[5];
+	printf("\ndest too small\n");
+	strcpy(toosmall, "hello world");
+	printf("\nOriginal libc function returns %s\n", toosmall);
+	ft_strcpy(toosmall2, "hello world");
+	printf("\nFunction to  be tested returns %s\n", toosmall2);
+	if (strcmp(toosmall, toosmall2) == 0)
 			TESTOK(3);
 	else
 			TESTFAILED(3);

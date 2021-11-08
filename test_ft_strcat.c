@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strcat.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: parkharo <parkharo@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:08:16 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/02 17:59:12 by parkharo         ###   ########.fr       */
+/*   Updated: 2021/11/08 12:11:05 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,20 @@ void	test_ft_strcat()
 	printf("\nOriginal libc function returns %s\n", strcat(s1, s2));
 	printf("To be tested  function returns %s\n", ft_strcat(s3, s2));
 	if (strcmp(s1, s3) == 0)
+		TESTOK(1);
+	else
+		TESTFAILED(1);
+	
+	TESTN(2);
+
+	char *src1 = " world";
+	char dest1[50] = "hello !";
+	char *src2 = " world";
+	char dest2[50] = "hello !";
+
+	printf("\nOriginal libc function returns %s\n", strcat(src1, dest1));
+	printf("To be tested function returns %s\n", ft_strcat(src2, dest2));
+	if (strcmp(dest1, dest2) == 0)
 		TESTOK(1);
 	else
 		TESTFAILED(1);
