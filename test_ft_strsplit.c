@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:19:39 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 15:22:43 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/08 16:45:05 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void test_ft_strsplit()
 	char **str_arr;
 	unsigned int i;
 
-	printf("numwrds = %u\n", num_wrds(orig,'*'));
+	printf("original\t%s\n", orig);
 	i = 0;
 	str_arr = ft_strsplit(orig, '*');
 	while (str_arr[i] != NULL)

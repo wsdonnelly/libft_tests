@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:33:22 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 15:42:41 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/08 16:43:23 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void test_ft_tolower()
 	
 	TESTN(2);
 	printf("\n<empty>\n");
-	c = '';
+	c = 'h';
 	r1 = tolower(c);
 	r2 = ft_tolower(c);
 	if (r1 == r2)
@@ -40,7 +40,7 @@ void test_ft_tolower()
 
 	TESTN(3);
 	printf("\n128\n");
-	c = 128;
+	c = 1;
 	r1 = tolower(c);
 	r2 = ft_tolower(c);
 	if (r1 == r2)

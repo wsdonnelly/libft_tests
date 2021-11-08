@@ -6,9 +6,11 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 14:55:54 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 14:59:15 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/08 16:41:15 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft_tests.h"
 
 void test_ft_strncmp()
 {
@@ -30,10 +32,10 @@ TESTF("ft_strncmp");
 
 	TESTN(2);
 	printf("\n<empty> -> <empty> -> 1\n");
-	*s1 = "";
-	*s2 = "";
-	int	x = strncmp(s1, s2, 1);
-	int y = ft_strncmp(s1, s2, 1);
+	char *s3 = "";
+	char *s4 = "";
+	x = strncmp(s3, s4, 1);
+	y = ft_strncmp(s3, s4, 1);
 	printf("REAL strncmp \t%d\n", x);
 	printf("ft_strncmp \t%d\n", y);
 
@@ -44,10 +46,10 @@ TESTF("ft_strncmp");
 	
 	TESTN(3);
 	printf("\n<empty> -> terve -> 10\n");
-	*s1 = "";
-	*s2 = "terve";
-	int	x = strncmp(s1, s2, 10);
-	int y = ft_strncmp(s1, s2, 10);
+	char *s5 = "";
+	char *s6 = "terve";
+	x = strncmp(s5, s6, 10);
+	y = ft_strncmp(s5, s6, 10);
 	printf("REAL strncmp \t%d\n", x);
 	printf("ft_strncmp \t%d\n", y);
 

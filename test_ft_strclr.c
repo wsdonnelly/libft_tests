@@ -6,16 +6,18 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 12:22:43 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 12:31:00 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/08 16:27:54 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft_tests.h"
 
 void	test_ft_strclr()
 {
 	TESTF("ft_strclr");
 
 	TESTN(1);
-	int i = 0;
+	size_t i = 0;
 	char s1[] = "Terve";
 	printf("\nOriginal\t%s\n", s1);
 	ft_strclr(s1);

@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:23:36 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 10:37:21 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/08 16:50:38 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,21 +22,20 @@ void	test_ft_isalnum()
 	printf("H");
 	n1 = ft_isalnum(c);
 	n2 = isalnum(c);
-	printf("\nOriginal libc function returns %d\n", n2;);
-	printf("To be tested function returns %s\n", n1);
+	printf("\nOriginal libc function returns %d\n", n2);
+	printf("To be tested function returns %d\n", n1);
 	if (n1 == n2)
 		TESTOK(1);
 	else
 		TESTFAILED(1);
 	
 	TESTN(2);
-	char c = '\0';
-	int n1, n2;
+	c = '\0';
 	printf("<\'\\0\'>");
 	n1 = ft_isalnum(c);
 	n2 = isalnum(c);
-	printf("\nOriginal libc function returns %d\n", n2;);
-	printf("To be tested function returns %s\n", n1);
+	printf("\nOriginal libc function returns %d\n", n2);
+	printf("To be tested function returns %d\n", n1);
 	if (n1 == n2)
 		TESTOK(2);
 	else

@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 14:45:06 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 14:46:44 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/08 16:38:41 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,4 @@ void test_ft_strjoin()
 	new = ft_strjoin(s1, s2);
 	printf("new\t%s\n", new);
 	free (new);
-	return (0);
 }

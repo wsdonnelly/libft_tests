@@ -6,23 +6,23 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 11:36:03 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 11:58:22 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/08 16:45:48 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_tests.h"
 
-void	test_ft_putnbr()
+void	test_ft_putnbr_fd()
 {
-	TESTF("ft_putnbr");
+	TESTF("ft_putnbr_fd");
 
 	TESTN(1);
 	printf("\nINT MAX:  \n");
-	ft_putnbr(INT_MAX, 1);
+	ft_putnbr_fd(INT_MAX, 1);
 	printf("\nINT MIN:  \n");
-	ft_putnbr(INT_MIN, 1);
+	ft_putnbr_fd(INT_MIN, 1);
 	printf("\nOutput 0  \n");
-	ft_putnbr(0, 1);
-	printf("\nOutput -42  \n");
-	ft_putnbr(-42);
+	ft_putnbr_fd(0, 1);
+	printf("\nOutput -42 \n");
+	ft_putnbr_fd(-42, 1);
 }

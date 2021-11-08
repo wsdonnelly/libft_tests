@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 14:48:05 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 14:49:27 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/08 16:39:04 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,5 @@ void test_ft_strlcat()
 	ft_strlcat(dest, src2, 15);
 	printf("src is now %s\n", src);
 	printf("dest is now %s\n", dest);
-	return (0);
 }
 //is size the sizeof(dst)? or the number of bytes from src to cpy?

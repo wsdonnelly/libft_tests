@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 12:31:19 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 14:59:31 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/08 16:37:46 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void test_ft_strcmp(void)
 
 	TESTN(1);
 	printf("\nhello world -> Hello World\n");
-	char *s1 = "hello world!";
+	char s1[] = "hello world!";
 	char *s2 = "Hello World";
 	int	x = strcmp(s1, s2);
 	int y = ft_strcmp(s1, s2);
@@ -32,10 +32,10 @@ void test_ft_strcmp(void)
 
 	TESTN(2);
 	printf("\n<empty> -> <empty>\n");
-	*s1 = "";
-	*s2 = "";
-	int	x = strcmp(s1, s2);
-	int y = ft_strcmp(s1, s2);
+	char *s3 = "";
+	char *s4 = "";
+	x = strcmp(s3, s4);
+	y = ft_strcmp(s3, s4);
 	printf("REAL strcmp \t%d\n", x);
 	printf("ft_strcmp \t%d\n", y);
 
@@ -46,10 +46,10 @@ void test_ft_strcmp(void)
 	
 	TESTN(3);
 	printf("\n<empty> -> terve\n");
-	*s1 = "";
-	*s2 = "terve";
-	int	x = strcmp(s1, s2);
-	int y = ft_strcmp(s1, s2);
+	char *s5 = "";
+	char *s6 = "terve";
+	x = strcmp(s5, s6);
+	y = ft_strcmp(s5, s6);
 	printf("REAL strcmp \t%d\n", x);
 	printf("ft_strcmp \t%d\n", y);
 

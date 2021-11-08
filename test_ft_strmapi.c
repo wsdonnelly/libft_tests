@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 14:53:01 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 14:54:08 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/08 16:39:21 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,4 @@ void test_ft_strmapi()
 	new = ft_strmapi(str, &test);
 	printf("mapped str\t%s\n", new);
 	free (new);
-	return (0);
 }

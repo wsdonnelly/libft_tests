@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:31:40 by jlehtine          #+#    #+#             */
-/*   Updated: 2021/11/08 10:22:44 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/08 16:52:21 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,30 +46,28 @@ void	test_ft_bzero()
 	
 	TESTN(3);
 	printf("<empty string>");
-	char s1[] = "";
-	char s2[] = "";
+	char s3[] = "";
+	char s4[] = "";
 	bzero(s1, sizeof(s1));
 	ft_bzero(s2, sizeof(s2));
-	printf("\nOriginal libc function returns %s\n", s1);
-	printf("To be tested function returns %s\n", s2);
-	if (strcmp(s1, s2) == 0)
+	printf("\nOriginal libc function returns %s\n", s3);
+	printf("To be tested function returns %s\n", s4);
+	if (strcmp(s3, s4) == 0)
 		TESTOK(3);
 	else
 		TESTFAILED(3);
 
 	TESTOK(4);
 	printf("int arr[] = {1, 2, 3, 4, 5};");
-	int s1[] = {1, 2, 3, 4, 5};
-	int s2[] = {1, 2, 3, 4, 5};
-	bzero(s1, sizeof(s1));
-	ft_bzero(s2, sizeof(s2));
-	printf("\nOriginal libc function returns %s\n", s1);
-	printf("To be tested function returns %s\n", s2);
+	int n1[] = {1, 2, 3, 4, 5};
+	int n2[] = {1, 2, 3, 4, 5};
+	bzero(n1, sizeof(n1));
+	ft_bzero(n2, sizeof(n2));
 	i = 0;
-	while (i < sizeof(s2))
+	while (i < sizeof(n2))
 	{
-		printf("%d ", s2[i]);
-		if (s2[i] != 0)
+		printf("%d ", n2[i]);
+		if (n2[i] != 0)
 		{
 			TESTFAILED(4);
 			return ;
@@ -77,6 +75,4 @@ void	test_ft_bzero()
 		i++;
 	}
 	TESTOK(4);
-
-
-
+}
