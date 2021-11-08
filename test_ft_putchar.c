@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_putchar.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: parkharo <parkharo@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 19:35:13 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/02 19:54:52 by parkharo         ###   ########.fr       */
+/*   Updated: 2021/11/05 15:21:21 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	test_ft_putchar()
 
 	TESTN(1);
 	ft_putstr("Original libc function outputs: ");
-	putchar('a');
+	ft_putchar('a');
 	ft_putstr("Function to  be tested outputs: ");
 	ft_putchar('a');
 

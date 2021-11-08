@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: parkharo <parkharo@student.hive.fi>        +#+  +:+       +#+         #
+#    By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 14:58:52 by parkharo          #+#    #+#              #
-#    Updated: 2021/11/03 14:02:25 by parkharo         ###   ########.fr        #
+#    Updated: 2021/11/05 15:40:41 by wdonnell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
