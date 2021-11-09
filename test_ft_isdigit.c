@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_isdigit.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:42:03 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 16:12:42 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/09 09:50:31 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	test_ft_isdigit()
 	printf("\nOriginal libc function returns %d\n", n2);
 	printf("To be tested function returns %d\n", n1);
 	if (n1 == n2)
-		TESTOK(1);
+		TESTOK(2);
 	else
-		TESTFAILED(1);
+		TESTFAILED(2);
 }

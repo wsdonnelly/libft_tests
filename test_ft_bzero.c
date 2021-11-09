@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_bzero.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:31:40 by jlehtine          #+#    #+#             */
-/*   Updated: 2021/11/08 16:52:21 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/09 10:18:05 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,17 +57,16 @@ void	test_ft_bzero()
 	else
 		TESTFAILED(3);
 
-	TESTOK(4);
-	printf("int arr[] = {1, 2, 3, 4, 5};");
+	TESTN(4);
+	printf("int arr[] = {1, 2, 3, 4, 5};\n");
 	int n1[] = {1, 2, 3, 4, 5};
-	int n2[] = {1, 2, 3, 4, 5};
-	bzero(n1, sizeof(n1));
-	ft_bzero(n2, sizeof(n2));
+	ft_bzero(n1, sizeof(n1));
+	printf("To be tested function returns:\t");
 	i = 0;
-	while (i < sizeof(n2))
+	while (i < sizeof(n1))
 	{
-		printf("%d ", n2[i]);
-		if (n2[i] != 0)
+		printf("%d ", n1[i]);
+		if (n1[i] != 0)
 		{
 			TESTFAILED(4);
 			return ;

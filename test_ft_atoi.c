@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_atoi.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 21:14:42 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/05 15:52:44 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/09 10:15:58 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,20 +111,20 @@ void test_ft_atoi()
 	printf("\nOriginal libc function returns %d\n", i);
 	printf("\nFunction to  be tested returns %d\n", ii);
 	if (i == ii)
-			TESTOK(7);
+			TESTOK(9);
 	else
-			TESTFAILED(7);
+			TESTFAILED(9);
 
 	TESTN(10);
-	printf("");
+	printf("<empty>");
 	i = atoi("");
 	ii = ft_atoi("");
 	printf("\nOriginal libc function returns %d\n", i);
 	printf("\nFunction to  be tested returns %d\n", ii);
 	if (i == ii)
-			TESTOK(7);
+			TESTOK(10);
 	else
-			TESTFAILED(7);
+			TESTFAILED(10);
 	
 	TESTN(11);
 	printf("4+2");
@@ -133,9 +133,9 @@ void test_ft_atoi()
 	printf("\nOriginal libc function returns %d\n", i);
 	printf("\nFunction to  be tested returns %d\n", ii);
 	if (i == ii)
-			TESTOK(7);
+			TESTOK(11);
 	else
-			TESTFAILED(7);
+			TESTFAILED(11);
 
 	TESTN(12);
 	printf("12345678909");
@@ -144,9 +144,9 @@ void test_ft_atoi()
 	printf("\nOriginal libc function returns %d\n", i);
 	printf("\nFunction to  be tested returns %d\n", ii);
 	if (i == ii)
-			TESTOK(7);
+			TESTOK(12);
 	else
-			TESTFAILED(7);
+			TESTFAILED(12);
 	
 	TESTN(13);
 	printf("fourty two");
@@ -155,7 +155,29 @@ void test_ft_atoi()
 	printf("\nOriginal libc function returns %d\n", i);
 	printf("\nFunction to  be tested returns %d\n", ii);
 	if (i == ii)
-			TESTOK(7);
+			TESTOK(13);
 	else
-			TESTFAILED(7);
+			TESTFAILED(13);
+
+	TESTN(14);
+	printf("+   42");
+	i = atoi("+   42");
+	ii = ft_atoi("+   42");
+	printf("\nOriginal libc function returns %d\n", i);
+	printf("\nFunction to  be tested returns %d\n", ii);
+	if (i == ii)
+			TESTOK(14);
+	else
+			TESTFAILED(14);
+	
+	TESTN(15);
+	printf("-   42");
+	i = atoi("-   42");
+	ii = ft_atoi("-   42");
+	printf("\nOriginal libc function returns %d\n", i);
+	printf("\nFunction to  be tested returns %d\n", ii);
+	if (i == ii)
+			TESTOK(15);
+	else
+			TESTFAILED(15);
 }
