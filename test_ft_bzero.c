@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_bzero.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:31:40 by jlehtine          #+#    #+#             */
-/*   Updated: 2021/11/09 10:18:05 by willdonnell      ###   ########.fr       */
+/*   Updated: 2021/11/09 11:01:40 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ void	test_ft_bzero()
 	ft_bzero(n1, sizeof(n1));
 	printf("To be tested function returns:\t");
 	i = 0;
-	while (i < sizeof(n1))
+	while (i < sizeof(n1) / sizeof(int))
 	{
 		printf("%d ", n1[i]);
 		if (n1[i] != 0)
