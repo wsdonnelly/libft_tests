@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_memmove.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 15:31:21 by jlehtine          #+#    #+#             */
-/*   Updated: 2021/11/08 11:22:14 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/09 09:25:24 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	test_ft_memmove()
 	char s1[20] = "Hello World!";
 	char s3[20] = "Hello World!";
 
-	printf("\nOriginal libc function returns %s\n", memmove(s1, s1 + 4, 5));
-	printf("To be tested  function returns %s\n", ft_memmove(s3, s3 + 4, 5));
+	printf("\nOriginal libc function returns %s\n", (char*)memmove(s1, s1 + 4, 5));
+	printf("To be tested  function returns %s\n", (char*)ft_memmove(s3, s3 + 4, 5));
 	if (strcmp(s1, s3) == 0)
 		TESTOK(1);
 	else
@@ -30,8 +30,8 @@ void	test_ft_memmove()
 
 	TESTN(2);
 
-	printf("\nOriginal libc function returns %s\n", memmove(s1 + 3, s1, 5));
-	printf("To be tested  function returns %s\n", ft_memmove(s3 + 3, s3, 5));
+	printf("\nOriginal libc function returns %s\n", (char*)memmove(s1 + 3, s1, 5));
+	printf("To be tested  function returns %s\n", (char*)ft_memmove(s3 + 3, s3, 5));
 	if (strcmp(s1, s3) == 0)
 		TESTOK(2);
 	else
@@ -39,8 +39,8 @@ void	test_ft_memmove()
 	
 	TESTN(3);
 
-	printf("\nOriginal libc function returns %s\n", memmove(s1 + 4, s1, 8));
-	printf("To be tested  function returns %s\n", ft_memmove(s3 + 4, s3, 8));
+	printf("\nOriginal libc function returns %s\n", (char*)memmove(s1 + 4, s1, 8));
+	printf("To be tested  function returns %s\n", (char*)ft_memmove(s3 + 4, s3, 8));
 	if (strcmp(s1, s3) == 0)
 		TESTOK(3);
 	else
