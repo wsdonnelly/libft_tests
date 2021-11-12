@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strclr.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 12:22:43 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 16:27:54 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/12 10:47:28 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void	test_ft_strclr()
 			TESTFAILED(1);
 			break ;
 		}
+		i++;
 	}
 	TESTOK(1);
 }

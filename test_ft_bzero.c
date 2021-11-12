@@ -3,14 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_bzero.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:31:40 by jlehtine          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2021/11/12 10:12:44 by willdonnell      ###   ########.fr       */
-=======
-/*   Updated: 2021/11/09 11:01:40 by wdonnell         ###   ########.fr       */
->>>>>>> 5657514a568a892a3edf82d18ad4f9900fd9374a
+/*   Updated: 2021/11/12 10:23:19 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

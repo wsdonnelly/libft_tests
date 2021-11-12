@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strcpy.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 20:52:35 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/08 13:56:41 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/12 10:48:07 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	test_ft_strcpy()
 			TESTOK(3);
 	else
 			TESTFAILED(3);
-	
+	/*
 	TESTN(4);
 	char toosmall[5];
 	char toosmall2[5];
@@ -67,4 +67,5 @@ void	test_ft_strcpy()
 			TESTOK(3);
 	else
 			TESTFAILED(3);
+	*/
 }

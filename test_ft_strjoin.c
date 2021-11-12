@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strjoin.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 14:45:06 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 16:38:41 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/12 11:02:25 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void test_ft_strjoin()
 {
 	TESTF("ft_strjoin");
-	TESTN(1);
+	TESTN(1);/*
 	const char *s1 = "hello";
 	const char *s2 = " world! ja terve maailma";
 	char *new;
@@ -24,4 +24,5 @@ void test_ft_strjoin()
 	new = ft_strjoin(s1, s2);
 	printf("new\t%s\n", new);
 	free (new);
+	*/
 }

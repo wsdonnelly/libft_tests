@@ -34,6 +34,7 @@ int main()
 	test_ft_strdel();
 	test_ft_strdup();
 	test_ft_strequ();
+	
 	test_ft_striter();
 	test_ft_striteri();
 	test_ft_strjoin();
@@ -46,14 +47,14 @@ int main()
 	test_ft_strncpy();
 	test_ft_strnequ();
 	test_ft_strnew();
-	test_ft_strnstr();
-	test_ft_strrchr();
-	test_ft_strsplit();
-	test_ft_strstr();
-	test_ft_strsub();
-	test_ft_strtrim();
-	test_ft_tolower();
-	test_ft_toupper();
+	//test_ft_strnstr();
+	//test_ft_strrchr();
+	//test_ft_strsplit();
+	//test_ft_strstr();
+	//test_ft_strsub();
+	//test_ft_strtrim();
+	//test_ft_tolower();
+	//test_ft_toupper();
 
 	return (0);
 }

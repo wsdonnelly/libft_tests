@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strdel.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 13:57:07 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 16:38:16 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/12 10:51:25 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,11 @@ void	test_ft_strdel()
 	TESTF("ft_strdel");
 
 	TESTN(1);
-
+	/*
 	char *str = "Terve Maailma";
 	printf("\n before\t%s\n", str);
 	ft_strdel(&str);
-	printf("after\t%s\n", str);
+	printf("pointer value after\t%p\n", str);
+	*/
+
 }

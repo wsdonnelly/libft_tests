@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strnew.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:02:10 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 15:04:23 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/12 11:25:11 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ void test_ft_strnew()
 
 	char *str = ft_strnew(4);
 	while (i < 4)
-		printf("%c ", str[i]);
+		printf("%c ", str[i++]);
 	free (str);
 }

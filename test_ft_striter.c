@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_striter.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 14:15:06 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 17:08:26 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/12 11:03:00 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ void test_ft_striter()
 	TESTN(1);
 	char str[] = "hello world!";
 	printf("orig str\t%s\n", str);
-	ft_striter(str, &test);
-	printf("modified str\t\t%s\n", str);
+	//ft_striter(str, &test);
+	//printf("modified str\t\t%s\n", str);
+
 }
