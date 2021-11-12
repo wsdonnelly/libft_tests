@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strnstr.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 14:37:47 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/08 15:15:57 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/12 11:33:01 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	test_ft_strnstr()
 		TESTOK(2);
 	else
 		TESTFAILED(2);
-	
+	/*
 	TESTN(3);
 	ptr1 = strnstr("Foo Bar Baz", "", 3);
 	ptr2 = ft_strnstr("Foo Bar Baz", "", 3);
@@ -45,4 +45,5 @@ void	test_ft_strnstr()
 		TESTOK(3);
 	else
 		TESTFAILED(3);
+	*/
 }

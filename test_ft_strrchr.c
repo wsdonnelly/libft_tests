@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strrchr.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:06:55 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 15:15:51 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/12 11:34:12 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void test_ft_strrchr()
 		TESTOK(2);
 	else
 		TESTFAILED(2);
-
+/*
 	TESTN(3);
 	printf("\nabcd -> x\n");
 	s1 = strrchr("abcd", 'x');
@@ -51,4 +51,5 @@ void test_ft_strrchr()
 		TESTOK(3);
 	else
 		TESTFAILED(3); 
+*/
 }
