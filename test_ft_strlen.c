@@ -27,7 +27,7 @@ void test_ft_strlen(void)
 	printf("Function to  be tested returns %d\n", y);
 
 	if (x == y)
-		TESTOK(1);
+		TESTOK(2);
 	else
-		TESTFAILED(1);
+		TESTFAILED(2);
 }

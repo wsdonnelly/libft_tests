@@ -6,7 +6,7 @@
 /*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 11:03:35 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/09 09:54:25 by willdonnell      ###   ########.fr       */
+/*   Updated: 2021/11/12 12:29:46 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,26 @@ void	test_ft_memalloc()
 {
 	TESTF("ft_memalloc");
 
+	size_t i;
+
 	TESTN(1);
-	int i = 0;
 	char *str;
 	printf("6 bytes");
 	str = ft_memalloc(6);
-	printf("\nTo be tested function returns:\t");
+	i = 0;
 	while (i < 6)
-		printf("%c ", str[i++]);
-	printf("\n");
+		if (str[i++] != '\0')
+			TESTFAILED(1);
+	TESTOK(1);
 	free (str);
+
+	TESTN(2);
+	char *str1;
+	printf("0 bytes");
+	str1 = ft_memalloc(0);
+	if (str1)
+		TESTFAILED(2);
+	else 
+		TESTOK(2);
+	free (str1);
 }
