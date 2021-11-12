@@ -1,3 +1,4 @@
 Makefile
 test_ft
 *.o
+result*
