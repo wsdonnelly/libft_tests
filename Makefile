@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+         #
+#    By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 14:58:52 by parkharo          #+#    #+#              #
-#    Updated: 2021/11/09 09:54:32 by willdonnell      ###   ########.fr        #
+#    Updated: 2021/11/09 10:51:54 by wdonnell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,8 +17,8 @@ CFLAGS = -Wall -Wextra -Werror -I *.h -o $(NAME) -include $(LIBDIR)/libft.h
 LIBFLAGS = -L${LIBDIR} -lft 
 
 #LIBDIR = ../LibFT
-#LIBDIR = ../home_libft/
-LIBDIR = ../libft/
+LIBDIR = ../home_libft/
+#LIBDIR = ../libft/
 NAME = test_ft
 
 SRC = *.c 
