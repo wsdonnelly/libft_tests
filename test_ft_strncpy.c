@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strncpy.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 14:39:20 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/12 11:24:07 by willdonnell      ###   ########.fr       */
+/*   Updated: 2021/11/15 13:11:14 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,16 +28,17 @@ void	test_ft_strncpy()
 	else
 		TESTFAILED(1);
 
-	bzero(chararray, sizeof(chararray));
-	bzero(chararray2, sizeof(chararray2));
+
 
 	TESTN(2);
+	char arr[6];
+	char arr2[6];
 	printf("<empty src>");
-	(void)strncpy(chararray, "", sizeof(chararray));
-	(void)ft_strncpy(chararray2, "", sizeof(chararray2));
-	printf("\nOriginal libc function returns %s\n", chararray);
-	printf("To be tested  function returns %s\n", chararray2);
-	if (strncmp(chararray, chararray2, 6) == 0)
+	(void)strncpy(arr, "", sizeof(arr));
+	(void)ft_strncpy(arr2, "", sizeof(arr2));
+	printf("\nOriginal libc function returns %s\n", arr);
+	printf("To be tested  function returns %s\n", arr2);
+	if (strncmp(arr, arr2, 6) == 0)
 		TESTOK(2);
 	else
 		TESTFAILED(2);

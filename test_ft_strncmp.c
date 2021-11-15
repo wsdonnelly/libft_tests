@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 14:55:54 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/08 16:41:15 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/15 11:39:31 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,4 +57,18 @@ TESTF("ft_strncmp");
 		TESTOK(3);
 	else
 		TESTFAILED(3);
+	
+	TESTN(4);
+	printf("\nterve -> terve -> 0\n");
+	char *s7 = "terve";
+	char *s8 = "terve";
+	x = strncmp(s7, s8, 0);
+	y = ft_strncmp(s7, s8, 10);
+	printf("REAL strncmp \t%d\n", x);
+	printf("ft_strncmp \t%d\n", y);
+
+	if (x == y)
+		TESTOK(4);
+	else
+		TESTFAILED(4);
 }

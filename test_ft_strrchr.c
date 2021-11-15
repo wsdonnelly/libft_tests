@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strrchr.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:06:55 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/12 11:34:12 by willdonnell      ###   ########.fr       */
+/*   Updated: 2021/11/15 12:18:54 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void test_ft_strrchr()
 {
 	TESTF("ft_strrchr");
-
+	
 	char *s1;
 	char *s2;
 
@@ -32,24 +32,36 @@ void test_ft_strrchr()
 	
 	TESTN(2);
 	printf("\nabcd -> \'\\0\'\n");
-	s1 = strrchr("abcd", '\0');
-	s2 = ft_strrchr("abcd", '\0');
-	printf("original returns\t%s\n", s1);
-	printf("ft_strrchr returns\t%s\n", s2);
-	if (s1 == s2)
+	char *s3 = strrchr("abcd", '\0');
+	char *s4 = ft_strrchr("abcd", '\0');
+	printf("original returns\t%s\n", s3);
+	printf("ft_strrchr returns\t%s\n", s4);
+	if (s3 == s4)
 		TESTOK(2);
 	else
 		TESTFAILED(2);
-/*
+	
 	TESTN(3);
 	printf("\nabcd -> x\n");
-	s1 = strrchr("abcd", 'x');
-	s2 = ft_strrchr("abcd", 'x');
-	printf("original returns\t%s\n", s1);
-	printf("ft_strrchr returns\t%s\n", s2);
-	if (s1 == s2)
+	char *s5 = strrchr("abcd", 'x');
+	char *s6 = ft_strrchr("abcd", 'x');
+	printf("original returns\t%s\n", s5);
+	printf("ft_strrchr returns\t%s\n", s6);
+	if (s5 == s6)
 		TESTOK(3);
 	else
 		TESTFAILED(3); 
-*/
+	
+	TESTN(4);
+	printf("\nempty -> empty\n");
+	char *s7 = strrchr("", '\0');
+	char *s8 = ft_strrchr("", '\0');
+	printf("original returns\t%s\n", s7);
+	printf("ft_strrchr returns\t%s\n", s8);
+	if (s7 == s8)
+		TESTOK(4);
+	else
+		TESTFAILED(4);
+
+
 }

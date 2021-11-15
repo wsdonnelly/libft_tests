@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_itoa.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:46:48 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/12 12:17:51 by willdonnell      ###   ########.fr       */
+/*   Updated: 2021/11/15 12:23:02 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,9 @@ void	test_ft_itoa()
 	printf("\nTo be tested function returns %s\n", str2);
 	free (str2);
 	
+	TESTN(4);
+	printf("0");
+	char *str3 = ft_itoa(0);
+	printf("\nTo be tested function returns %s\n", str3);
+	free (str3);
 }
