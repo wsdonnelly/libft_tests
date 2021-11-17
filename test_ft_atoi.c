@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_atoi.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 21:14:42 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/09 10:15:58 by willdonnell      ###   ########.fr       */
+/*   Updated: 2021/11/17 10:10:02 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -180,4 +180,48 @@ void test_ft_atoi()
 			TESTOK(15);
 	else
 			TESTFAILED(15);
+	
+	TESTN(16);
+	printf("INT_MIN");
+	i = atoi("-2147483648");
+	ii = ft_atoi("-2147483648");
+	printf("\nOriginal libc function returns %d\n", i);
+	printf("\nFunction to  be tested returns %d\n", ii);
+	if (i == ii)
+			TESTOK(16);
+	else
+			TESTFAILED(16);
+	
+	TESTN(17);
+	printf("INT_MAX");
+	i = atoi("2147483647");
+	ii = ft_atoi("2147483647");
+	printf("\nOriginal libc function returns %d\n", i);
+	printf("\nFunction to  be tested returns %d\n", ii);
+	if (i == ii)
+			TESTOK(17);
+	else
+			TESTFAILED(17);
+	
+	TESTN(18);
+	printf("way too big 9999999999999999999999999");
+	i = atoi("9999999999999999999999999");
+	ii = ft_atoi("9999999999999999999999999");
+	printf("\nOriginal libc function returns %d\n", i);
+	printf("\nFunction to  be tested returns %d\n", ii);
+	if (i == ii)
+			TESTOK(18);
+	else
+			TESTFAILED(18);
+
+	TESTN(19);
+	printf("way too small -9999999999999999999999999");
+	i = atoi("-9999999999999999999999999");
+	ii = ft_atoi("-9999999999999999999999999");
+	printf("\nOriginal libc function returns %d\n", i);
+	printf("\nFunction to  be tested returns %d\n", ii);
+	if (i == ii)
+			TESTOK(19);
+	else
+			TESTFAILED(19);
 }
