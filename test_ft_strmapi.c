@@ -6,7 +6,7 @@
 /*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 14:53:01 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/12 11:18:32 by willdonnell      ###   ########.fr       */
+/*   Updated: 2021/11/17 17:20:03 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,9 @@ void test_ft_strmapi()
 	printf("orig str\t%s\n", str);
 	new = ft_strmapi(str, &test4);
 	printf("mapped str\t%s\n", new);
+	if (strcmp(new, "uyghllposngs") == 0)
+		TESTOK(1);
+	else
+		TESTFAILED(1);
 	free (new);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_memccpy.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 13:25:59 by jlehtine          #+#    #+#             */
-/*   Updated: 2021/11/08 11:10:22 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/17 17:02:33 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,8 @@ void	test_ft_memccpy()
 
 	bzero(s1, sizeof(s1));
 	bzero(s3, sizeof(s3));
+	
 	TESTN(3);
-
 	printf("\nOriginal libc function returns %p\n", memccpy(s1, s2, 'X', sizeof(s2)));
 	printf("To be tested  function returns %p\n", ft_memccpy(s3, s2, 'X', sizeof(s2)));
 	if (strcmp(s1, s3) == 0)

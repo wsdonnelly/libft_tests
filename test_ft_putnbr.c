@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_putnbr.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
+/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 20:00:39 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/08 11:57:09 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/17 16:59:49 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -6,7 +6,7 @@
 /*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:08:16 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/12 10:44:55 by willdonnell      ###   ########.fr       */
+/*   Updated: 2021/11/17 17:17:26 by willdonnell      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,31 @@ void	test_ft_strcat()
 		TESTFAILED(1);
 	
 	TESTN(2);
-/*
+	
 	char *src1 = " world";
 	char dest1[50] = "hello !";
 	char *src2 = " world";
 	char dest2[50] = "hello !";
 
-	printf("\nOriginal libc function returns %s\n", strcat(src1, dest1));
-	printf("To be tested function returns %s\n", ft_strcat(src2, dest2));
+	printf("\nOriginal libc function returns %s\n", strcat(dest1, src1));
+	printf("To be tested function returns %s\n", ft_strcat(dest2, src2));
 	if (strcmp(dest1, dest2) == 0)
 		TESTOK(2);
 	else
 		TESTFAILED(2);
-*/
+
+	TESTN(3);
+	
+	char *src3 = "";
+	char dest3[50] = "";
+	char *src4 = "";
+	char dest4[50] = "";
+	printf("all empty\n");
+	printf("\nOriginal libc function returns %s\n", strcat(dest3, src3));
+	printf("To be tested function returns %s\n", ft_strcat(dest4, src4));
+	if (strcmp(dest3, dest4) == 0)
+		TESTOK(3);
+	else
+		TESTFAILED(3);
+
 }

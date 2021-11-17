@@ -17,8 +17,8 @@ CFLAGS = -Wall -Wextra -Werror -I *.h -o $(NAME) -include $(LIBDIR)/libft.h
 LIBFLAGS = -L${LIBDIR} -lft 
 
 #LIBDIR = ../LibFT
-#LIBDIR = ../libft
-LIBDIR = ../home_libft
+LIBDIR = ../libft
+#LIBDIR = ../home_libft
 NAME = test_ft
 
 SRC = *.c 
