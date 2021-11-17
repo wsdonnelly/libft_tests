@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 20:52:35 by parkharo          #+#    #+#             */
-/*   Updated: 2021/11/15 13:09:01 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/17 11:56:54 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	test_ft_strcpy()
 	else
 			TESTFAILED(1);
 
-	
+	/*
 	TESTN(2);
 	char arr[100];
 	char arr2[100];
@@ -41,7 +41,7 @@ void	test_ft_strcpy()
 	else
 			TESTFAILED(2);
 
-
+	*/
 	TESTN(3);
 	char arr3[100];
 	char arr4[100];

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_strsplit.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: willdonnelly <willdonnelly@student.42.f    +#+  +:+       +#+        */
+/*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:19:39 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/12 12:51:22 by willdonnell      ###   ########.fr       */
+/*   Updated: 2021/11/17 11:44:26 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,42 @@ void test_ft_strsplit()
 	printf("original contains only delimintor\t%s\n", orig3);
 	i = 0;
 	str_arr = ft_strsplit(orig3, '*');
+	while (str_arr[i] != NULL)
+	{
+		printf("%s\t%u\n", str_arr[i], i);
+		i++;
+	}
+	i = 0;
+	while (str_arr[i] != NULL)
+	{
+		free(str_arr[i]);
+		i++;
+	}
+	str_arr = NULL;
+/*
+	TESTN(4);
+	const char *orig4 = NULL;
+	printf("original is NULL and delimiter\t%s\n", orig4);
+	i = 0;
+	str_arr = ft_strsplit(orig4, '*');
+	while (str_arr[i] != NULL)
+	{
+		printf("%s\t%u\n", str_arr[i], i);
+		i++;
+	}
+	i = 0;
+	while (str_arr[i] != NULL)
+	{
+		free(str_arr[i]);
+		i++;
+	}
+	str_arr = NULL;
+*/
+	TESTN(5);
+	const char *orig5 = "*hello***world**terve*maailma**";
+	printf("original is *hello***world**terve*maailma** and delimiter is \\0\t%s\n", orig5);
+	i = 0;
+	str_arr = ft_strsplit(orig5, '\0');
 	while (str_arr[i] != NULL)
 	{
 		printf("%s\t%u\n", str_arr[i], i);

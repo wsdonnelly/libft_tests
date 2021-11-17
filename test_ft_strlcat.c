@@ -6,7 +6,7 @@
 /*   By: wdonnell <wdonnell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 14:48:05 by wdonnell          #+#    #+#             */
-/*   Updated: 2021/11/15 11:36:15 by wdonnell         ###   ########.fr       */
+/*   Updated: 2021/11/17 10:19:27 by wdonnell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void test_ft_strlcat()
 	TESTN(1);
 	
 	char *src = " world";
-	//char *src2 = " !";
 	char dest[14] = "hello";
 
 	printf("src is %s\n", src);
@@ -26,7 +25,7 @@ void test_ft_strlcat()
 	ft_strlcat(dest, src, 15);
 	
 	printf("dest after ft_strlcat %s\n", dest);
-
+/*
 	TESTN(2);
 	printf("dest is empty and size is 15\n");
 	char *src1 = " world";
@@ -45,7 +44,7 @@ void test_ft_strlcat()
 
 	printf("src is %s\n", src2);
 	printf("dest is %s\n", dest2);
-	ft_strlcat(dest2, src1, 15);
+	ft_strlcat(dest2, src1, 0);
 	
 	printf("dest after ft_strlcat %s\n", dest2);
 
@@ -69,7 +68,7 @@ void test_ft_strlcat()
 	printf("dest is %s\n", dest4);
 	ft_strlcat(dest4, src4, 42);
 	
-	printf("dest after ft_strlcat %s\n", dest3);
-
+	printf("dest after ft_strlcat %s\n", dest4);
+*/
 }
 //is size the sizeof(dst)? or the number of bytes from src to cpy?
