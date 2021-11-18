@@ -9,7 +9,7 @@
 #include <limits.h>
 #include <ctype.h>
 
-
+#define PART(n)	printf("\n\n\e[0;33m>>>>>>>>>>>>>>>>>>>>>>PART %d<<<<<<<<<<<<<<<<<<<<<<\e[0m\n", n);
 #define TESTF(fn)	printf("\n##############################\n\e[1;34mTesting %s function...\e[0m", fn);
 #define TESTFAILED(n) printf("\e[1;31m\nTEST %d FAILED!\e[0m", n)
 #define TESTOK(n) printf("\e[1;32m\nTEST %d OK!\e[0m", n)
