@@ -20,7 +20,7 @@ void	test_ft_memset()
 	printf("\nOriginal libc function returns %s\n", (char *)memset(s1, 'T', 15));
 	printf("To be tested  function returns %s\n", (char *)ft_memset(s2, 'T', 15));
 	if (strcmp(s1, s2) == 0)
-		TESTOK(1);
+		TESTOK(2);
 	else
-		TESTFAILED(1);
+		TESTFAILED(2);
 }
